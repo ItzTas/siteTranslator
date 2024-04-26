@@ -18,10 +18,30 @@
   </head>
 
   <body>
-    <header>
-      <h1>Site translator</h1>
+    <header class="mainHeader">
+      <h1>Welcome to the site translator!</h1>
+      <p>
+        This site takes a url of another site and returns a translated version
+        of it
+      </p>
     </header>
-    <p>Test</p>
+    <section class="URLsection">
+      <form>
+        <p>Insert the url of the site you wish to translate below:</p>
+        <input id="siteURL" type="text" placeholder="http://" name="siteURL" />
+        <div>
+          <button type="submit">Translate</button>
+        </div>
+      </form>
+    </section>
+    <footer class="mainFooter">
+      <p>
+        <strong
+          >THIS IS A NON-COPORATIVE, EDUCATIONAL PROJECT WITH NO INTENTION OF
+          MAKING MONEY</strong
+        >
+      </p>
+    </footer>
     <script src="{% static 'translator/script.js' %}"></script>
   </body>
 </html>
