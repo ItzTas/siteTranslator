@@ -1,8 +1,10 @@
-async function fetchHTMl(url) {
+export async function fetchHTML(url) {
+  let html;
   try {
-    const siteURL = URL(url);
     const response = await fetch(url);
+    html = await response.text();
   } catch (error) {
-    return `${error.message}: ${url}`;
+    throw error;
   }
+  return html;
 }

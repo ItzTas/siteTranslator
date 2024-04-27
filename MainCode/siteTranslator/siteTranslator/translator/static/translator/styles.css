@@ -151,6 +151,18 @@ h6 {
   justify-content: center;
 }
 
+#errorHandler {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+#errorHandler p {
+  font-size: 1.6rem;
+  color: red;
+}
+
 @media (max-width: 880px) {
   .mainHeader h1 {
     font-size: 2.4rem;
