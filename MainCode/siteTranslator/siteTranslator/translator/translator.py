@@ -6,8 +6,8 @@ def translateList (lang, listTr):
     for text in listTr:
         strTrans = translator.translate(text)
         translated.append(strTrans)
-    return strTrans
+    return translated
 
 def translateText (lang, text):
     translator = Translator(to_lang=lang)
-    return Translator(text)
+    return translator.translate(text)
