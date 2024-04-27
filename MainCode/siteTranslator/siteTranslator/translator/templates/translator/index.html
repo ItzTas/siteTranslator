@@ -26,9 +26,20 @@
       </p>
     </header>
     <section class="URLsection">
-      <form>
+      <form name="URLform">
         <p>Insert the url of the site you wish to translate below:</p>
-        <input id="siteURL" type="text" placeholder="http://" name="siteURL" />
+        <input
+          required
+          id="siteURL"
+          type="text"
+          placeholder="http://"
+          name="siteURL"
+        />
+        <div>
+          <select required>
+            <option value="">Chose a language</option>
+          </select>
+        </div>
         <div>
           <button type="submit">Translate</button>
         </div>

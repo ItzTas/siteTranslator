@@ -98,6 +98,15 @@ h6 {
   min-width: 30rem;
   text-align: center;
   border-radius: 2px;
+  align-items: center;
+}
+
+.URLsection select {
+  margin-top: 1rem;
+  background-color: rgb(70, 70, 150);
+  font-weight: bold;
+  padding: 0.3rem;
+  border: 1px solid black;
 }
 
 .URLsection p {
@@ -123,6 +132,10 @@ h6 {
   font-size: 1.3rem;
 }
 
+.URLsection div:nth-child(1) {
+  display: flex;
+}
+
 .mainFooter {
   background-color: gray;
   width: 50vw;
@@ -136,10 +149,6 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.URLsection div:nth-child(1) {
-  display: flex;
 }
 
 @media (max-width: 880px) {
