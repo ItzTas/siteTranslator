@@ -1,7 +1,13 @@
 from translate import Translator
 
-translator = Translator(to_lang="pt")
+def translateList (lang, listTr):
+    translator = Translator(to_lang=lang)
+    translated = []
+    for text in listTr:
+        strTrans = translator.translate(text)
+        translated.append(strTrans)
+    return strTrans
 
-translation = translator.translate("Hello world")
-
-print(translation)
+def translateText (lang, text):
+    translator = Translator(to_lang=lang)
+    return Translator(text)
