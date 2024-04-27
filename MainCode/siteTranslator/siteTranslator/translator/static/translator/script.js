@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       siteURL.value = "";
       errorP.style.color = "steelblue";
       errorP.innerHTML = "Feched!";
+      console.log(html);
     } catch (error) {
       errorP.innerHTML = `${error.message}: ${siteURL.value}`;
     }

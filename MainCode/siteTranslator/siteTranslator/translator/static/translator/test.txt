@@ -1,0 +1,966 @@
+'''
+<!DOCTYPE html>
+<html lang="en-us" class="min-h-screen">
+
+<head>
+	<meta name="generator" content="Hugo 0.110.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    
+    
+    
+    Boot.dev Blog
+    
+    
+    
+  </title>
+
+  
+  
+  <link rel="canonical" href="https://blog.boot.dev/" />
+  
+  <link rel="prev" href="https://blog.boot.dev/page/2/" />
+
+  
+  <meta name="description" content="You don&#39;t need a CS degree to get hired, but you do need computer science skills. Prepare to land an entry-level role in tech by building real coding projects." />
+  
+
+  
+  <link href="/css/tail-out.min.css" rel="stylesheet">
+
+  
+  <link href="/css/styles.min.css" rel="stylesheet">
+
+  
+  <link href="/css/syntax.min.css" rel="stylesheet">
+
+  
+  <link rel="preconnect" href="https://use.typekit.net">
+  <link rel="stylesheet" href="https://use.typekit.net/cmx5dxo.css">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="manifest" href="/favicons/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+  
+<link href="https://www.googletagmanager.com" rel="preconnect" crossorigin>
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PT7FHFB');</script>
+
+
+  <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Boot.dev Blog",
+    "url": "https:\/\/blog.boot.dev\/",
+    "description": "You don\u0027t need a CS degree to get hired, but you do need computer science skills. Prepare to land an entry-level role in tech by building real coding projects.",
+    "thumbnailUrl": "https:\/\/blog.boot.dev\/favicons\/favicon-32x32.png"
+}
+</script>
+
+
+  <meta property="og:title" content="Boot.dev Blog" />
+<meta property="og:description" content="You don&#39;t need a CS degree to get hired, but you do need computer science skills. Prepare to land an entry-level role in tech by building real coding projects." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://blog.boot.dev/" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Boot.dev Blog"/>
+<meta name="twitter:description" content="You don&#39;t need a CS degree to get hired, but you do need computer science skills. Prepare to land an entry-level role in tech by building real coding projects."/>
+
+  <meta itemprop="name" content="Boot.dev Blog">
+<meta itemprop="description" content="You don&#39;t need a CS degree to get hired, but you do need computer science skills. Prepare to land an entry-level role in tech by building real coding projects.">
+</head>
+
+<body class="bg-glassmorph text-gray-250 m-0">
+
+  <nav class="bg-glassmorph z-50 border-b border-gray-600">
+  <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 top-nav-bar-height">
+    <div class="relative flex items-center justify-between h-full">
+
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <button type="button" onclick="clickMobileMenuToggle()"
+          class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+          aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="flex-1 flex items-center justify-center sm:justify-evenly">
+        <div class="h-full">
+          <h2 class="text-xl font-bold">
+            <a href="https://boot.dev">
+              <img src="/img/300/bootdev-logo-full-small.png" height="56" class="h-14" />
+            </a>
+          </h2>
+        </div>
+        <div class="hidden sm:block sm:ml-6">
+          <div class="flex space-x-4 text-sm h-full items-center">
+            <a href="https://boot.dev/tracks/backend"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">
+              Courses
+            </a>
+
+            <a href="https://boot.dev/pricing"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">
+              Pricing
+            </a>
+
+            <a href="https://boot.dev/leaderboard"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">
+              Leaderboard
+            </a>
+
+            <a href="https://boot.dev/community"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">
+              Community
+            </a>
+
+            <a href="https://boot.dev/lore"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">
+              Lore
+            </a>
+
+            <a href="https://www.backendbanter.fm/"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">
+              Podcast
+            </a>
+
+            <a href="/" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">
+              Blog
+            </a>
+
+            <a href="https://boot.dev" class="block-button-secondary">
+              Sign In
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sm:hidden" id="mobile-menu" style="display:none">
+    <div class="px-2 pt-2 pb-3 space-y-1">
+      <a href="https://boot.dev" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+        aria-current="page">
+        Sign In
+      </a>
+
+      <a href="https://boot.dev/tracks/backend"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+        Courses
+      </a>
+
+      <a href="https://boot.dev/pricing"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+        Pricing
+      </a>
+
+      <a href="https://boot.dev/leaderboard"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+        Leaderboard
+      </a>
+
+      <a href="https://boot.dev/community"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+        Community
+      </a>
+
+      <a href="/about/"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+        About
+      </a>
+
+      <a href="/"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+        Blog
+      </a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  
+  function clickMobileMenuToggle() {
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (mobileMenu.style.display === "none") {
+      mobileMenu.style.display = "block";
+    } else {
+      mobileMenu.style.display = "none";
+    }
+  }
+</script>
+
+
+
+<div class="flex flex-row">
+  <div class="max-w-4xl m-auto p-4 sm:p-8">
+
+    <div class="mb-8 flex flex-row justify-center">
+      <h1 class="text-4xl text-white mb-2">
+        Boot.dev Blog
+        
+      </h1>
+    </div>
+
+    <ul>
+      
+      <li>
+        <a href="/news/bootdev-beat-2024-04/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/ruinreborn_drum_drum_in_center_of_shot_fantasy_drum_fantasy_for_168d8215-f368-4264-b4f6-d3f07171d1b0.png" />
+            <img  class="rounded object-cover block sm:hidden"
+              src="/img/800/ruinreborn_drum_drum_in_center_of_shot_fantasy_drum_fantasy_for_168d8215-f368-4264-b4f6-d3f07171d1b0.png" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">The Boot.dev Beat. April 2024</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Apr 03, 2024 by Lane Wagner
+            </span>
+
+            <p class="hidden sm:block">Pythogoras returned in our second community-wide boss battle. He was vanquished, and there was much rejoicing.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/education/maybe-you-do-need-kubernetes/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/buildingarobot.png.webp" />
+            <img  class="rounded object-cover block sm:hidden"
+              src="/img/800/buildingarobot.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">Maybe You Do Need Kubernetes</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Mar 08, 2024 by Lane Wagner
+            </span>
+
+            <p class="hidden sm:block">Theo has this great video on Kubernetes, currently titled &ldquo;You Don&rsquo;t Need Kubernetes&rdquo;. I&rsquo;m a Kubernetes enjoyer, but I&rsquo;m not here to argue about that.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/news/bootdev-beat-2024-03/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/fantasydrumsinwintermarch.png.webp" />
+            <img  class="rounded object-cover block sm:hidden"
+              src="/img/800/fantasydrumsinwintermarch.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">The Boot.dev Beat. March 2024</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Feb 28, 2024 by Lane Wagner
+            </span>
+
+            <p class="hidden sm:block">Pythogoras escaped this month. The community rallied against the Serpent God, and while he was wounded and beaten back, he escaped.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/news/bootdev-beat-2024-02/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/febdrums.png.webp" />
+            <img  class="rounded object-cover block sm:hidden"
+              src="/img/800/febdrums.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">The Boot.dev Beat. February 2024</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Jan 31, 2024 by Lane Wagner
+            </span>
+
+            <p class="hidden sm:block">609,179. That&rsquo;s the number of lessons you crazy folks have completed on Boot.dev in the last 30 days.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/clean-code/give-up-sooner/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/goldencitysad.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/goldencitysad.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">Give Up Sooner</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Jan 28, 2024 by Lane Wagner
+            </span>
+
+            <p class="hidden sm:block">As a developer, how many times each day do you look something up online? I&rsquo;m not talking about a simple piece of syntax, I&rsquo;m talking about the things that are a bit harder to find.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/news/bootdev-beat-2024-01/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/ruinreborn_drums_fantasy_fantasy_drums_winter_winter_drums_snow_60fb9184-8eb7-479f-b205-b514ec06a61d.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/ruinreborn_drums_fantasy_fantasy_drums_winter_winter_drums_snow_60fb9184-8eb7-479f-b205-b514ec06a61d.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">The Boot.dev Beat. January 2024</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Jan 03, 2024 by Lane Wagner
+            </span>
+
+            <p class="hidden sm:block">Hope you had a wonderful holiday! I know you might not have been able to take time off, but I hope you were able to spend some time with family and friends.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/wiki/troubleshoot-code-editor-issues/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/frozen_wizard.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/frozen_wizard.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">Troubleshooting the Boot.dev Code Editor: Common Snags</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Dec 07, 2023 by Hunter Beckmann
+            </span>
+
+            <p class="hidden sm:block">As a Boot.dev student, you may have encountered frustrating moments when your code editor freezes or is stuck &ldquo;Setting up your environment&rdquo;, leaving you wondering what went wrong.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/computer-science/ai-taking-programming-jobs/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/golemai.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/golemai.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">9 Months with GPT-4: Can I Fire my Developers Yet?</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Dec 03, 2023 by Lane Wagner
+            </span>
+
+            <p class="hidden sm:block">GitHub has been re-founded on copilot, rumors of an AI superior to GPT-4 abound, and you&rsquo;re trying to decide if it&rsquo;s worth it to learn what a red-black tree is.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/news/bootdev-beat-2023-12/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/ruinreborn_drums_fantasy_fantasy_drums_fantasy_winter_drums_dru_f573fd41-0651-4079-a3cf-ec097c6ad834.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/ruinreborn_drums_fantasy_fantasy_drums_fantasy_winter_drums_dru_f573fd41-0651-4079-a3cf-ec097c6ad834.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">The Boot.dev Beat. December 2023</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Dec 01, 2023 by Lane Wagner
+            </span>
+
+            <p class="hidden sm:block">Hope you had a splendid Turkey month. My wife, two kids, and I spent Thanksgiving in southern Utah.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/clean-code/youre-not-qualified-for-tech-opinions/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/wizardsfightingoversomething.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/wizardsfightingoversomething.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">You&#39;re Not Qualified to Have an Opinion on TDD</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Nov 07, 2023 by Lane Wagner
+            </span>
+
+            <p class="hidden sm:block">One of the marks of a good senior developer is that they have lots of interesting opinions.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/webdev/put-that-framework-down/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/frameworkhouse.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/frameworkhouse.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">Put that Framework Down Before Someone Gets Hurt</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Nov 06, 2023 by Lane Wagner
+            </span>
+
+            <p class="hidden sm:block">There is only one question that ignites my inner rage more than &ldquo;How do I get a developer job in 3 months?</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/news/bootdev-beat-2023-11/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/novemberdrums.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/novemberdrums.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">The Boot.dev Beat. November 2023</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Oct 30, 2023 by Lane Wagner
+            </span>
+
+            <p class="hidden sm:block">Hope you had a fantastic Halloween. I spent last weekend in Seattle with Allan and Hunter (the other two full-timers here at Boot.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/python/queue-data-structure-python/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/queue_of_swords.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/queue_of_swords.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">Queue Data Structure in Python: Ordering at Its Best</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Oct 22, 2023 by Lane Wagner
+            </span>
+
+            <p class="hidden sm:block">A queue is an efficient collection of ordered items. New items can be added to one side, and removed from the other side.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/golang/can-go-used-web-development/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/cangoimage.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/cangoimage.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">Can Go Be Used in Web Development?</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Oct 06, 2023 by Natalie Schooner
+            </span>
+
+            <p class="hidden sm:block">Recently I saw an interesting post on Reddit: “I would like to be more full-stack,” user Fenugurod said.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/python/stack-data-structure-python/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/stackofrocksfantasygame.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/stackofrocksfantasygame.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">Understanding Stacks: Python Implementation of a Core Data Structure</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Oct 06, 2023 by Lane Wagner
+            </span>
+
+            <p class="hidden sm:block">A stack is an abstract data type that serves as a collection of elements. The name &ldquo;stack&rdquo; originates from the analogy of items physically stacked on top of each other.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/news/bootdev-beat-2023-10/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/October_2023_Blog_Art.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/October_2023_Blog_Art.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">The Boot.dev Beat. October 2023</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Oct 01, 2023 by Lane Wagner
+            </span>
+
+            <p class="hidden sm:block">Happy All Hallow&rsquo;s Eve. I hope you enjoy this month&rsquo;s cover art. It might be my favorite so far.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/jobs/what-does-webdev-earn/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/earningpotential.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/earningpotential.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">What Does a Web Developer Earn?</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Sep 13, 2023 by Natalie Schooner
+            </span>
+
+            <p class="hidden sm:block">As always, the short answer is easiest: On average, according to Indeed, an American web developer earns $81,034 per year.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/education/learn-to-code-the-slow-way/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/shortcutwizard.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/shortcutwizard.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">Learn to Code the Slow Way</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Sep 10, 2023 by Lane Wagner
+            </span>
+
+            <p class="hidden sm:block">Ever since starting Boot.dev, I&rsquo;ve been flooded with what I call &ldquo;quicksand questions&rdquo;. On the surface, a quicksand question seems like a good question.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/education/best-web-dev-books/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/pileofbooks.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/pileofbooks.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">Top 10 Books on Web Development in 2023</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Sep 05, 2023 by Natalie Schooner
+            </span>
+
+            <p class="hidden sm:block">If you’re looking for good web development books, you’re probably interested in becoming a web developer.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/news/bootdev-beat-2023-09/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/bootdevdrumshroom.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/bootdevdrumshroom.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">The Boot.dev Beat. September 2023</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Aug 31, 2023 by Lane Wagner
+            </span>
+
+            <p class="hidden sm:block">The best part of working on Boot.dev is seeing you all make almost unbelievable strides in not only your understanding of fundamental concepts, but what you can now build from scratch.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/python/python-for-web-development/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/wagslane_A_majestic_castle_made_of_intertwined_Python_code_stan_24fe25ad-a8fa-40f5-823f-d840c0cd788a.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/wagslane_A_majestic_castle_made_of_intertwined_Python_code_stan_24fe25ad-a8fa-40f5-823f-d840c0cd788a.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">Can I Use Python for Web Development?</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Aug 14, 2023 by Natalie Schooner
+            </span>
+
+            <p class="hidden sm:block">I love giving a short answer to these: yes, 100%, Python is a great tool for web development.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/golang/one-thing-id-change-about-go/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/wagslane_A_caveman_coder_etching_the_Go_Gopher_into_a_stone_tab_2a1df1e1-429d-429d-b122-e21f1f7a6a3a.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/wagslane_A_caveman_coder_etching_the_Go_Gopher_into_a_stone_tab_2a1df1e1-429d-429d-b122-e21f1f7a6a3a.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">The One Thing I&#39;d Change About Go</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Aug 12, 2023 by Lane Wagner
+            </span>
+
+            <p class="hidden sm:block">Go is built for grug brained programmers like me.
+grug brain developer not so smart, but grug brain developer program many long year and learn some things although mostly still confused</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/backend/what-is-backend-web-development/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/seasonedbackendmage.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/seasonedbackendmage.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">What is Backend Web Development?</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Aug 07, 2023 by Natalie Schooner
+            </span>
+
+            <p class="hidden sm:block">The boring answer is that backend web development is the process of building the server-side of websites and web applications.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/news/bootdev-beat-2023-08/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/bootdevbeatdrumdesert.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/bootdevbeatdrumdesert.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">The Boot.dev Beat. August 2023</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Jul 28, 2023 by Lane Wagner
+            </span>
+
+            <p class="hidden sm:block">As I&rsquo;m writing this on July 28th, we&rsquo;ve had 118,984 lessons successfully completed by students on Boot.</p>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/backend/django-for-backend/"
+          class="cursor-pointer flex flex-col sm:flex-row p-4 my-4 glassmorph active-scale-103">
+
+          
+          <div class="flex-2 mr-0 sm:mr-4 mb-2 sm:mb-0 flex justify-center">
+            <img  loading="lazy"  width="288" height="192"
+              class="rounded object-cover hidden sm:block" src="/img/800/pythondjangofantasy.png.webp" />
+            <img  loading="lazy"  class="rounded object-cover block sm:hidden"
+              src="/img/800/pythondjangofantasy.png.webp" />
+          </div>
+          
+
+          <div class="flex-1">
+            <h2 class="text-lg text-white mb-2">The Pros and Cons of Django for Backend Development</h2>
+
+            <span class="text-sm text-gray-400 mb-4">
+              Jul 17, 2023 by Natalie Schooner
+            </span>
+
+            <p class="hidden sm:block">Django is a popular Python-based framework for building web applications. It provides pre-built components and conventions, which simplifies the web app development process and allows developers to focus on writing their application&rsquo;s specific logic rather than dealing with repetitive tasks.</p>
+          </div>
+        </a>
+      </li>
+      
+    </ul>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="flex flex-row justify-evenly text-blue-400 hover:text-blue-300">
+  
+  
+
+  
+  
+  <a href="/page/2/">
+    <li class="block-button-secondary">
+      Next
+    </li>
+  </a>
+  
+
+</ul>
+
+
+
+<footer class="mb-4">
+  
+  <div class="py-4 flex justify-center">
+    <div class="border-t-2 border-gray-600 w-full max-w-3xl"></div>
+  </div>
+
+  <main class="mb-4 flex justify-center flex-wrap">
+    <span>© <a href="https://boot.dev"
+  
+    title="Boot.dev"
+  
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    target="_blank"
+  >Boot.dev</a> 2024</span>
+    <span class="mx-2">|</span>
+    <a href="/categories/"><span>Categories</span></a>
+    <span class="mx-2">|</span>
+    <a href="/contact/"><span>Contact</span></a>
+    <span class="mx-2">|</span>
+    <a href="https://boot.dev/playground/go"><span>Playground</span></a>
+    <span class="mx-2">|</span>
+    <a href="/about/"><span>About</span></a>
+  </main>
+
+  <main class="mb-4 flex justify-center flex-wrap">
+    <a href="/sitemap.xml"><span>Sitemap</span></a>
+    <span class="mx-2">|</span>
+    <a href="/index.xml"><span>RSS</span></a>
+    <span class="mx-2">|</span>
+    <a href="/faq/"><span>FAQ</span></a>
+    <span class="mx-2">|</span>
+    <a href="/terms/"><span>TOS</span></a>
+    <span class="mx-2">|</span>
+    <a href="/privacy/"><span>Privacy</span></a>
+  </main>
+  
+</footer>
+</body>
+
+</html>
+'''

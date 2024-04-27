@@ -20,5 +20,6 @@ from siteTranslator.translator import views
 
 urlpatterns = [
     path('', views.index, name="home"),
+    path("request", views.request),
     path('admin/', admin.site.urls),
 ]
