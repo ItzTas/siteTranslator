@@ -23,6 +23,10 @@ const getTranslate = async (html, lang) => {
   console.log(response.data);
 };
 
+const postHtml = async (html) => {
+  const response = await axios.post("../script/main.js");  
+};
+
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("#URLform");
 
@@ -31,10 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let lang = document.querySelector("#lang");
     console.log(lang.value);
     try {
-      const html = await fetchHTML(siteURL.value, {
-        method: "GET",
-        mode: "cors",
-      });
+      const html = await fetchHTML(siteURL.value);
       siteURL.value = "";
       errorP.style.color = "steelblue";
       errorP.innerHTML = "Feched!";

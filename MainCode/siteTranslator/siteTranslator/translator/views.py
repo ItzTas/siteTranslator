@@ -16,6 +16,7 @@ def translate(request):
     print(request.GET.get("lang"))
     html = request.GET.get("html")
     lang = request.GET.get("lang")
+    print(getTranslatedTrs(html, lang)[0])
     return JsonResponse(getTranslatedTrs(html, lang))
 
 # Create your views here.
