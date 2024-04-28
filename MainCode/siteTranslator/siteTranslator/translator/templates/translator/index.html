@@ -16,7 +16,7 @@
     />
     <title>Site Translator</title>
   </head>
-  
+
   <body>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <header class="mainHeader">
@@ -42,7 +42,7 @@
           name="siteURL"
         />
         <div>
-          <select required name="selectedLanguage">
+          <select id="lang" required name="selectedLanguage">
             <option value="">Chose a language</option>
             <option value="fr">French</option>
             <option value="pt">Portugese</option>
@@ -77,9 +77,13 @@
       </p>
     </footer>
     <script
-    type="module"
-    src="{% static 'translator/src/fetchURL.js' %}"
-  ></script>
-    <script defer type="module" src="{% static 'translator/script.js' %}"></script>
+      type="module"
+      src="{% static 'translator/src/fetchURL.js' %}"
+    ></script>
+    <script
+      defer
+      type="module"
+      src="{% static 'translator/script.js' %}"
+    ></script>
   </body>
 </html>

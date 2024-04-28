@@ -1,4 +1,4 @@
-export async function fetchHTML(url) {
+async function fetchHTML(url) {
   let html;
   try {
     const response = await fetch(url);
@@ -10,4 +10,8 @@ export async function fetchHTML(url) {
     throw error;
   }
   return html;
+}
+
+module.exports = {
+    fetchHTML,
 }

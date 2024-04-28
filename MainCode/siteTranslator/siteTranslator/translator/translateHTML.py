@@ -1,6 +1,5 @@
-from translator import translateList, translateText
+from .translator import translateList, translateText
 from bs4 import BeautifulSoup
-from html_test import test_html_file_str
 
 def translateHTML(html_file, lang):
     soup = BeautifulSoup(html_file, "html.parser")
@@ -9,7 +8,6 @@ def translateHTML(html_file, lang):
     tags = {
         "title": [("title", soup.title.text, translateText(lang, soup.title.text))],
         "p": [],
-        "div": [],
         "h1": [],
         "h2": [],
         "h3": [],
@@ -28,14 +26,6 @@ def translateHTML(html_file, lang):
         found_txt.append(p.text)
         i += 1
         tags["p"].append((f"p({i})", p.text, translateText(lang, p.text)))
-    div_tags = soup.find_all("div")
-    i = 0
-    for div in div_tags:
-        if div.text in found_txt:
-            continue
-        found_txt.append(div.text)
-        i += 1
-        tags["div"].append((f"div({i})", div.text, translateText(lang, div.text)))
     h1_tags = soup.find_all("h1")
     i = 0
     for h1 in h1_tags:
@@ -113,6 +103,3 @@ def filteredTrsHTML(translated_dict):
 def getTranslatedTrs(html_file, lang):
     return filteredTrsHTML(translateHTML(html_file, lang))
             
-
-tags = getTranslatedTrs(test_html_file_str, "pt")
-print(tags)
