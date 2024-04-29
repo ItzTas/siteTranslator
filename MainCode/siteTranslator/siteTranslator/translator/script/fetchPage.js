@@ -1,7 +1,12 @@
 async function fetchHTML(url) {
   let html;
   try {
-    const response = await fetch(url);
+    const response = await fetch(url, {
+      method: "GET",
+      headers: {
+        "Content-Type": "text/html",
+      },
+    });
     html = await response.text();
     if (response.status >= 400) {
       throw new Error(response.statusText);
@@ -13,5 +18,5 @@ async function fetchHTML(url) {
 }
 
 module.exports = {
-    fetchHTML,
-}
+  fetchHTML,
+};
