@@ -59,6 +59,7 @@ html {
 body {
   background-color: rgb(16, 2, 49);
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -149,6 +150,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 #errorHandler {
@@ -161,6 +163,45 @@ h6 {
 #errorHandler p {
   font-size: 1.6rem;
   color: red;
+}
+
+#resultsOftrs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#resultsOftrs p {
+  font-size: 1.6rem;
+  color: steelblue;
+  text-align: left;
+}
+
+#resultsOftrs h5 {
+  font-size: 2rem;
+  color: steelblue;
+  margin-bottom: 2rem;
+}
+
+#resultsOftrs h3 {
+  font-size: 2.3rem;
+}
+
+#resultsOftrs h4 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+#resultsOftrs li:not(:first-of-type) {
+  margin-bottom: 2rem;
+}
+
+#resultsOftrs ul {
+  list-style-type: none;
 }
 
 @media (max-width: 880px) {
@@ -185,5 +226,30 @@ h6 {
 @media (max-width: 668px) {
   .mainFooter {
     height: 6.7rem;
+    position: static;
+  }
+
+  .mainFooter p {
+    font-size: 1.19rem;
+  }
+
+  #resultsOftrs {
+    margin-bottom: 10rem;
+  }
+
+  #resultsOftrs h3 {
+    font-size: 1.9rem;
+  }
+
+  #resultsOftrs h4 {
+    font-size: 1.4rem;
+  }
+
+  #resultsOftrs h5 {
+    font-size: 1.9rem;
+  }
+
+  #resultsOftrs p {
+    font-size: 1.19rem;
   }
 }
