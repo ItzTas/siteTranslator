@@ -51,6 +51,12 @@ function displaytransP(translated) {
     return;
   }
   let ptrs = document.querySelector("#pTrs");
+  let clear = document.querySelectorAll("#pTrs li:not(:first-child)");
+  if (clear.length > 0 && clear) {
+    for (let li of clear) {
+      li.remove();
+    }
+  }
   let numP = translated.data.p[translated.data.p.length - 1];
   let ptresh4 = document.querySelector("#pTrs h4");
   ptresh4.innerHTML = `The number of paragraphs translated is: ${numP}`;
@@ -65,6 +71,12 @@ function displaytransLi(translated) {
     return;
   }
   let litrs = document.querySelector("#liTrs");
+  let clear = document.querySelectorAll("#liTrs li:not(:first-child)");
+  if (clear.length > 0 && clear) {
+    for (let li of clear) {
+      li.remove();
+    }
+  }
   let numLi = translated.data.li[translated.data.li.length - 1];
   let liresh4 = document.querySelector("#liTrs h4");
   liresh4.innerHTML = `The number of list items translated is: ${numLi}`;
@@ -79,6 +91,12 @@ function displaytransTd(translated) {
     return;
   }
   let tdtrs = document.querySelector("#tdTrs");
+  let clear = document.querySelectorAll("#tdTrs li:not(:first-child)");
+  if (clear.length > 0 && clear) {
+    for (let li of clear) {
+      li.remove();
+    }
+  }
   let numTd = translated.data.td[translated.data.td.length - 1];
   let tdresh4 = document.querySelector("#tdTrs h4");
   tdresh4.innerHTML = `The number of table data translated is: ${numTd}`;

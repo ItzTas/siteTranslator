@@ -9,3 +9,5 @@ it has a oriented interface you just need to run the server and put the url in t
 ###### limitations
 
 it only translates p, li and td tags and only up to 8 translations of each due to the limitations in the resources
+
+a site that can be a good exemple is https://blog.boot.dev just copy it and paste to the translator

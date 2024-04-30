@@ -13,10 +13,7 @@ def request(request):
     return JsonResponse({"Test_is_a_success": True})
 
 def translate(request):
-    print("Works")
-    print(request.GET.get("lang"))
     html = request.GET.get("html")
-    print(html)
     lang = request.GET.get("lang")
     return JsonResponse(getTranslatedTrs(html, lang))
 

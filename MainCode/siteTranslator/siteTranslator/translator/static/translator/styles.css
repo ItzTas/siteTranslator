@@ -133,6 +133,14 @@ h6 {
   font-size: 1.3rem;
 }
 
+.URLsection button:hover {
+  filter: brightness(140%);
+}
+
+.URLsection button:active {
+  filter: brightness(180%);
+}
+
 .URLsection div:nth-child(1) {
   display: flex;
 }
